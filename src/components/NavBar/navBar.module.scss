@@ -1,18 +1,56 @@
 .navBar {
    border: solid 1px black;
    background-color: #0b0c18;
-   height: 150px;
+   min-height: 80px;
    color: white;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   flex-direction: row;
 }
 
-.profile {
-   border: solid 1px blue;
+.navBar__profile {
+   margin-left: 10px;
+   & > img {
+      border-radius: 100%;
+      vertical-align: middle;
+      margin-right: 10px;
+   }
 }
 
-.menu {
-   border: solid 1px red;
+.navBar__menu {
+   a {
+      color: white;
+      text-decoration: none;
+   }
+   &_link {
+      display: inline-block;
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+      border-radius: 10px;
+
+      text-align: center;
+
+      margin-right: 5px;
+      width: 100px;
+      &:hover {
+         background-color: #283a9d;
+         cursor: pointer;
+      }
+      &.selected {
+         background-color: #1a2561;
+      }
+   }
 }
 
-.network {
-   border: solid 1px green;
+.navBar__network {
+   margin-right: 10px;
+   &_img {
+      background-color: white;
+      border-radius: 100%;
+      margin-right: 10px;
+   }
 }
