@@ -12,7 +12,6 @@ export default class MyDocument extends Document {
                   http-equiv="Content-Type"
                   content="text/html;charset=UTF-8"
                />
-               <title>Test</title>
             </Head>
             <body>
                <Main />

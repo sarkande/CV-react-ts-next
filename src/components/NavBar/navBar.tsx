@@ -3,9 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function NavBar({ route }) {
+type Props = {
+   route: { path: string; value: string }[];
+};
+
+export default function NavBar({ route }: Props) {
    const router = useRouter();
-   console.log(route);
+
    return (
       <div className={styles.navBar}>
          <div className={styles.navBar__profile}>
@@ -13,51 +17,19 @@ export default function NavBar({ route }) {
             <span>Allan Perez Gonzalez</span>
          </div>
          <div className={styles.navBar__menu}>
-            <Link href="/">
-               <span
-                  className={`${styles.navBar__menu_link} ${
-                     router.pathname === "/" ? styles.selected : null
-                  }`}
-               >
-                  Home
-               </span>
-            </Link>
-            <Link href="/cv">
-               <span
-                  className={`${styles.navBar__menu_link} ${
-                     router.pathname === "/cv" ? styles.selected : null
-                  }`}
-               >
-                  CV
-               </span>
-            </Link>
-            <Link href="/skills">
-               <span
-                  className={`${styles.navBar__menu_link} ${
-                     router.pathname === "/skills" ? styles.selected : null
-                  }`}
-               >
-                  Skills
-               </span>
-            </Link>
-            <Link href="/portfolio">
-               <span
-                  className={`${styles.navBar__menu_link} ${
-                     router.pathname === "/portfolio" ? styles.selected : null
-                  }`}
-               >
-                  Portfolio
-               </span>
-            </Link>
-            <Link href="/contact">
-               <span
-                  className={`${styles.navBar__menu_link} ${
-                     router.pathname === "/contact" ? styles.selected : null
-                  }`}
-               >
-                  Contact
-               </span>
-            </Link>
+            {route.map((e: { path: string; value: string }) => {
+               return (
+                  <Link href={e.path} key={e.path}>
+                     <span
+                        className={`${styles.navBar__menu_link} ${
+                           router.pathname === e.path ? styles.selected : null
+                        }`}
+                     >
+                        {e.value}
+                     </span>
+                  </Link>
+               );
+            })}
          </div>
          <div className={styles.navBar__network}>
             <Link href="https://github.com/sarkande">

@@ -1,5 +1,13 @@
 import { NavBar } from "@/components/NavBar";
+import Head from "next/head";
 
 export default function Skills() {
-   return <>Skills </>;
+   return (
+      <>
+         <Head>
+            <title>Skills</title>
+         </Head>
+         Skills
+      </>
+   );
 }
