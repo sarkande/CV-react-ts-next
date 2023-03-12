@@ -6,10 +6,10 @@ export default class MyDocument extends Document {
             <Head>
                <meta
                   name="description"
-                  content="A site for demonstrating use of _document file"
+                  content="Allan PEREZ professionnal page"
                />
                <meta
-                  http-equiv="Content-Type"
+                  httpEquiv="Content-Type"
                   content="text/html;charset=UTF-8"
                />
             </Head>

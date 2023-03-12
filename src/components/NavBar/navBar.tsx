@@ -13,7 +13,7 @@ export default function NavBar({ route }: Props) {
    return (
       <div className={styles.navBar}>
          <div className={styles.navBar__profile}>
-            <Image src="/profile.jpg" alt="13" width={60} height={60} />
+            <Image src="/profile.png" alt="13" width={60} height={60} />
             <span>Allan Perez Gonzalez</span>
          </div>
          <div className={styles.navBar__menu}>
