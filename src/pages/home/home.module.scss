@@ -40,10 +40,13 @@
 .summary {
   position: fixed;
   width: 15%;
-  left: 5px;
+  left: 15px;
   top: 25%;
-  border: solid 1px black;
   li {
     list-style-type: circle;
+    margin: 5px;
+    a {
+      color: #0074d9;
+    }
   }
 }
