@@ -1,55 +1,59 @@
 .navBar {
-   border: solid 1px black;
-   background-color: #0b0c18;
-   min-height: 80px;
-   color: white;
-   display: flex;
-   align-content: center;
-   align-items: center;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   flex-direction: row;
+  border: solid 1px black;
+  background-color: #0b0c18;
+  min-height: 80px;
+  color: white;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .navBar__profile {
-   margin-left: 10px;
-   & > img {
-      border-radius: 100%;
-      vertical-align: middle;
-      margin-right: 10px;
-   }
+  margin-left: 10px;
+  & > img {
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
 }
 
 .navBar__menu {
-   a {
-      color: white;
-      text-decoration: none;
-   }
-   &_link {
-      display: inline-block;
-      padding: 25px 5px 25px 5px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  &_link {
+    display: inline-block;
+    padding: 25px 5px 25px 5px;
 
-      border-radius: 10px;
+    border-radius: 10px;
 
-      text-align: center;
+    text-align: center;
 
-      margin-right: 5px;
-      min-width: 50px;
-      &:hover {
-         background-color: #283a9d;
-         cursor: pointer;
-      }
-      &.selected {
-         background-color: #1a2561;
-      }
-   }
+    margin-right: 5px;
+    min-width: 50px;
+    &:hover {
+      background-color: #283a9d;
+      cursor: pointer;
+    }
+    &.selected {
+      background-color: #1a2561;
+    }
+  }
 }
 
 .navBar__network {
-   margin-right: 10px;
-   &_img {
-      background-color: white;
-      border-radius: 100%;
-      margin-right: 10px;
-   }
+  margin-right: 10px;
+  &_img {
+    background-color: white;
+    border-radius: 100%;
+
+    margin-right: 10px;
+  }
+  &_border {
+    border: solid 2px white;
+  }
 }

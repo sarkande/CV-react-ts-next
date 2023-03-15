@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { NavBar } from '@/components/NavBar'
+import NavBar from '@/components/NavBar'
 import '../styles/reset.css'
 import '../styles/global.css'
 import Head from 'next/head'

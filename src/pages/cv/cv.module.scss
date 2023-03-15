@@ -1,0 +1,24 @@
+.cv_picture {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: dashed 2px #0b0c18;
+}
+
+.cv_button_dl {
+  color: white;
+  background-color: #0b0c18;
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 0px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  border: solid 1px #0b0c18;
+
+  &:hover {
+    color: #0b0c18;
+    background-color: white;
+  }
+}

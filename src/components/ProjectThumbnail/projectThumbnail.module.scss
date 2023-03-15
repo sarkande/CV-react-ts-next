@@ -1,0 +1,28 @@
+.thumbnail {
+  width: 200px;
+  height: 200px;
+  border: solid 1px black;
+  margin: 0px 5px 5px 0px;
+  &.maximized {
+    width: 500px;
+    height: 500px;
+  }
+  position: relative;
+  &_title {
+    background-color: grey;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    h1 {
+      height: 25px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    button {
+      width: 100%;
+      height: 25px;
+    }
+  }
+}

@@ -33,7 +33,7 @@ export default function Home() {
 
           <li>
             En haut à droite, vous pourrez accéder directement à mon répertoire
-            Github, mon bitbucket ainsi que mon linkedin.
+            Github, mon gitlab ainsi que mon linkedin.
           </li>
         </ul>
         <p>
