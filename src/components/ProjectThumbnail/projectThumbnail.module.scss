@@ -1,6 +1,6 @@
 .thumbnail {
   width: 200px;
-  height: 200px;
+  min-height: 200px;
   border: solid 1px #dddddd;
   margin: 5px;
   border-radius: 5px;
@@ -10,10 +10,14 @@
   &_picture {
     object-fit: cover;
   }
+  .container {
+    border: red;
+  }
   &.maximized {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    margin-right: 5px;
     background-color: white;
+    min-height: 80px;
   }
   position: relative;
   &_title {

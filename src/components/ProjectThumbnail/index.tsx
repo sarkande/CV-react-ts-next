@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import styles from './projectThumbnail.module.scss'
 import ImageWithFallback from '../ImageWithFallback'
+import Carousel from '../Carousel'
 
 interface MyProps {
   children?: React.ReactNode
@@ -25,11 +26,9 @@ export default function ProjectThumbnail({
   return (
     <div className={`${styles.thumbnail} ${open ? styles.maximized : null}`}>
       {open ? (
-        <div>
-          {children}
-          {carousel ? (
-            <Image src="/profile.png" alt="13" width={60} height={60} />
-          ) : null}
+        <div className={styles.container}>
+          <div>{children}</div>
+          {carousel ? <Carousel img={carousel} /> : null}
         </div>
       ) : null}
       {!open ? (

@@ -1,0 +1,30 @@
+.main {
+  height: 305px;
+  img {
+    object-fit: contain;
+    background-color: black;
+  }
+}
+
+.miniatures {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+
+  height: 125px;
+  img {
+    object-fit: cover;
+    margin-right: 5px;
+    border: solid 2px black;
+    width: 125;
+    height: 125;
+    &.selected {
+      border-color: red;
+    }
+  }
+}
+
+.carousel {
+  margin-bottom: 60px;
+  overflow: auto;
+}
