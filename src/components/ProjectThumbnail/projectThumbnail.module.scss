@@ -1,28 +1,52 @@
 .thumbnail {
   width: 200px;
   height: 200px;
-  border: solid 1px black;
-  margin: 0px 5px 5px 0px;
+  border: solid 1px #dddddd;
+  margin: 5px;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0 0 11px #dddddd;
+  }
+  &_picture {
+    object-fit: cover;
+  }
   &.maximized {
     width: 500px;
     height: 500px;
+    background-color: white;
   }
   position: relative;
   &_title {
-    background-color: grey;
+    background-color: white;
     font-size: 12px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 5px;
     h1 {
       height: 25px;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
+      line-height: 25px;
+      text-align: center;
+      font-weight: normal;
     }
     button {
-      width: 100%;
+      margin: auto;
+      display: block;
+      width: 100px;
       height: 25px;
+      background-color: #0074d9;
+      color: white;
+      border: solid 1px #dddddd;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: white;
+        color: #0074d9;
+      }
     }
   }
 }
