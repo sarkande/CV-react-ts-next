@@ -10,43 +10,130 @@ export default function Portfolio() {
       </Head>
       <h1 className={styles.title}>Formation ReactJS</h1>
       <div className={styles.portfolio}>
-        <ProjectThumbnail title="Projet 14" thumbnail="">
+        <ProjectThumbnail
+          title="Modale"
+          thumbnail="project/openclassrooms/projet14-modale/2.png"
+          carousel={[
+            'project/openclassrooms/projet14-modale/1.png',
+            'project/openclassrooms/projet14-modale/2.png',
+            'project/openclassrooms/projet14-modale/3.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 13" thumbnail="">
+        <ProjectThumbnail
+          title="ArgentBank"
+          thumbnail="project/openclassrooms/projet13-argentbank/2.png"
+          carousel={[
+            'project/openclassrooms/projet13-argentbank/1.png',
+            'project/openclassrooms/projet13-argentbank/2.png',
+            'project/openclassrooms/projet13-argentbank/3.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 12" thumbnail="">
+        <ProjectThumbnail
+          title="SportSee"
+          thumbnail="project/openclassrooms/projet12-sportsee/2.png"
+          carousel={[
+            'project/openclassrooms/projet12-sportsee/1.png',
+            'project/openclassrooms/projet12-sportsee/2.png',
+            'project/openclassrooms/projet12-sportsee/3.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 11" thumbnail="">
+        <ProjectThumbnail
+          title="Kasa"
+          thumbnail="project/openclassrooms/projet11-kasa/2.png"
+          carousel={[
+            'project/openclassrooms/projet11-kasa/1.png',
+            'project/openclassrooms/projet11-kasa/2.png',
+            'project/openclassrooms/projet11-kasa/3.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 10" thumbnail="">
+        <ProjectThumbnail
+          title="Maquettage"
+          thumbnail="project/openclassrooms/projet10-maquettage/3.png"
+          carousel={[
+            'project/openclassrooms/projet10-maquettage/1.png',
+            'project/openclassrooms/projet10-maquettage/2.png',
+            'project/openclassrooms/projet10-maquettage/3.png',
+            'project/openclassrooms/projet10-maquettage/4.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 9" thumbnail="">
+        <ProjectThumbnail
+          title="Billed"
+          thumbnail="project/openclassrooms/projet9-Billed/2.png"
+          carousel={[
+            'project/openclassrooms/projet9-Billed/1.png',
+            'project/openclassrooms/projet9-Billed/2.png',
+            'project/openclassrooms/projet9-Billed/3.png',
+            'project/openclassrooms/projet9-Billed/4.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 8" thumbnail="">
+
+        <ProjectThumbnail
+          title="Les petits plats"
+          thumbnail="project/openclassrooms/projet7-lespetitsplats/1.png"
+          carousel={[
+            'project/openclassrooms/projet7-lespetitsplats/1.png',
+            'project/openclassrooms/projet7-lespetitsplats/2.png',
+            'project/openclassrooms/projet7-lespetitsplats/3.png',
+            'project/openclassrooms/projet7-lespetitsplats/4.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 7" thumbnail="">
+        <ProjectThumbnail
+          title="Fisheye"
+          thumbnail="project/openclassrooms/projet6-fisheye/1.png"
+          carousel={[
+            'project/openclassrooms/projet6-fisheye/1.png',
+            'project/openclassrooms/projet6-fisheye/2.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 6" thumbnail="">
+
+        <ProjectThumbnail
+          title="GameOn"
+          thumbnail="project/openclassrooms/projet4-gameon/1.png"
+          carousel={[
+            'project/openclassrooms/projet4-gameon/1.png',
+            'project/openclassrooms/projet4-gameon/2.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 5" thumbnail="">
+        <ProjectThumbnail
+          title="OhMyFood"
+          thumbnail="project/openclassrooms/projet3-ohmyfood/5.png"
+          carousel={[
+            'project/openclassrooms/projet3-ohmyfood/1.png',
+            'project/openclassrooms/projet3-ohmyfood/2.png',
+            'project/openclassrooms/projet3-ohmyfood/3.png',
+            'project/openclassrooms/projet3-ohmyfood/4.png',
+            'project/openclassrooms/projet3-ohmyfood/5.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 4" thumbnail="">
-          <p>Test</p>
-        </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 3" thumbnail="">
-          <p>Test</p>
-        </ProjectThumbnail>
-        <ProjectThumbnail title="Projet 2" thumbnail="">
+        <ProjectThumbnail
+          title="Booki"
+          thumbnail="project/openclassrooms/projet2-booki/1.png"
+          carousel={[
+            'project/openclassrooms/projet2-booki/1.png',
+            'project/openclassrooms/projet2-booki/2.png',
+            'project/openclassrooms/projet2-booki/3.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
       </div>
@@ -72,7 +159,15 @@ export default function Portfolio() {
         </ProjectThumbnail>
         <ProjectThumbnail
           title="Talents-Affinity"
-          thumbnail="project/talents.jpg"
+          thumbnail="project/talents-affinity.jpg"
+          carousel={[
+            'project/talents-affinity/1.png',
+            'project/talents-affinity/2.png',
+            'project/talents-affinity/3.png',
+            'project/talents-affinity/4.png',
+            'project/talents-affinity/5.png',
+            'project/talents-affinity/6.png',
+          ]}
         >
           <p>Test</p>
         </ProjectThumbnail>
@@ -82,16 +177,71 @@ export default function Portfolio() {
         >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="OrcWar" thumbnail="project/orcwar.png">
+        <ProjectThumbnail
+          title="OrcWar"
+          thumbnail="project/orcwar.png"
+          carousel={[
+            'project/orcwar/1.png',
+            'project/orcwar/2.png',
+            'project/orcwar/3.png',
+          ]}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Jonquille Sportive Reignier" thumbnail="">
+        <ProjectThumbnail
+          title="Jonquille Sportive Reignier"
+          thumbnail="project/jonquille.jpg"
+          carousel={['project/jonquille/1.png', 'project/jonquille/2.png']}
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="Bujinkan-kanji" thumbnail="">
+        <ProjectThumbnail
+          title="Bujinkan-kanji"
+          thumbnail="project/bujinkan-kanji.png"
+        >
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="RPG 3D Unity" thumbnail="">
+        <ProjectThumbnail
+          title="RPG 3D Unity"
+          thumbnail="project/rpg3d/1.png"
+          carousel={[
+            'project/rpg3d/1.png',
+            'project/rpg3d/2.png',
+            'project/rpg3d/3.png',
+            'project/rpg3d/4.png',
+          ]}
+        >
+          <p>Test</p>
+        </ProjectThumbnail>
+        <ProjectThumbnail
+          title="RPG tactical 3D Unity"
+          thumbnail="project/tactical/1.png"
+        >
+          <p>Test</p>
+        </ProjectThumbnail>
+        <ProjectThumbnail
+          title="android Unity"
+          thumbnail="project/android/1.png"
+        >
+          <p>Test</p>
+        </ProjectThumbnail>
+        <ProjectThumbnail
+          title="OCR Discord"
+          thumbnail="project/OCR_discord/1.png"
+        >
+          <p>Test</p>
+        </ProjectThumbnail>
+        <ProjectThumbnail
+          title="OCR Dofus"
+          thumbnail="project/OCR_app/1.png"
+          carousel={['project/OCR_app/1.png', 'project/OCR_app/2.png']}
+        >
+          <p>Test</p>
+        </ProjectThumbnail>
+        <ProjectThumbnail
+          title="Navigateur web simplifié"
+          thumbnail="project/mini/1.png"
+        >
           <p>Test</p>
         </ProjectThumbnail>
       </div>
@@ -105,15 +255,7 @@ export default function Portfolio() {
         <ProjectThumbnail title="Bloc notes C++" thumbnail="">
           <p>Test</p>
         </ProjectThumbnail>
-        <ProjectThumbnail title="OCR Discord" thumbnail="">
-          <p>Test</p>
-        </ProjectThumbnail>
-        <ProjectThumbnail title="OCR Dofus" thumbnail="">
-          <p>Test</p>
-        </ProjectThumbnail>
-        <ProjectThumbnail title="Navigateur web simplifié" thumbnail="">
-          <p>Test</p>
-        </ProjectThumbnail>
+
         <ProjectThumbnail title="Bot discord parsing" thumbnail="">
           <p>Test</p>
         </ProjectThumbnail>
