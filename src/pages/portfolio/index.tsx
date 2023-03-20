@@ -19,7 +19,25 @@ export default function Portfolio() {
             'project/openclassrooms/projet14-modale/3.png',
           ]}
         >
-          <p>Test</p>
+          <h1>Projet Modale</h1>
+          <a target="_blank" href="https://github.com/sarkande/Projet_14">
+            Lien github: Projet_14
+          </a>
+          <p>
+            Il s'agit du dernier projet de la formation ReactJS. Ce projet
+            consistait à gérer une page de gestion d'employé pour un service RH.
+            Il fallait refaire le système actuel fonctionnant sous JQuery pour
+            passer à du ReactJS et un module parmi plusieurs possible devait
+            etre coder. J'ai personnellement choisis la fenêtre modale, et ai du
+            ensuite upload le composant sur npm et donc pour ça creer un fichier
+            webpackJS.
+          </p>
+          <p>
+            Pour ce module, j'ai fait en sorte de créer quelques chose de
+            flexible et facilement parametrable pour que les eventuels
+            utilisateurs qui telechargerait ce module, puissent faire ce qu'il
+            souhaitait sans trop de difficultés
+          </p>
         </ProjectThumbnail>
         <ProjectThumbnail
           title="ArgentBank"
@@ -30,7 +48,19 @@ export default function Portfolio() {
             'project/openclassrooms/projet13-argentbank/3.png',
           ]}
         >
-          <p>Test</p>
+          <h1>Projet ArgentBank</h1>
+          <a target="_blank" href="https://github.com/sarkande/Projet_13">
+            Lien github: Projet_13
+          </a>
+          <p>
+            Pour ce projet, le but était de réaliser une application de gestion
+            de compte bancaire, et principalement d'utiliser Redux comme state
+            manager.
+          </p>
+          <p>
+            Une api backend était fourni, il fallait donc gérer les requetes
+            pour pouvoir recupérer un token et le stocker dans le state manager
+          </p>
         </ProjectThumbnail>
         <ProjectThumbnail
           title="SportSee"
@@ -41,7 +71,22 @@ export default function Portfolio() {
             'project/openclassrooms/projet12-sportsee/3.png',
           ]}
         >
-          <p>Test</p>
+          <h1>Projet SportSee</h1>
+          <a target="_blank" href="https://github.com/sarkande/Projet_12">
+            Lien github: Projet_12
+          </a>
+          <p>
+            Pour ce projet, le but était de réaliser une application react
+            permettant d'afficher un panel de statistiques détaillés pour un
+            utilisateur en fonction de ses performances physiques.
+          </p>
+          <p>
+            J'ai travailler en utilisant la bibliotheque d3, qui est très
+            puissante mais relativement compliqué à prendre en main. Par la
+            suite, j'ai rajouté des animations lors de la construction des
+            graphiques, ce qui permettait de rendre la page plus attractive et
+            pousser plus loin ma decouverte de la bibliotheque.
+          </p>
         </ProjectThumbnail>
         <ProjectThumbnail
           title="Kasa"
@@ -52,7 +97,15 @@ export default function Portfolio() {
             'project/openclassrooms/projet11-kasa/3.png',
           ]}
         >
-          <p>Test</p>
+          <h1>Projet Kasa</h1>
+          <a target="_blank" href="https://github.com/sarkande/Projet_11">
+            Lien github: Projet_11
+          </a>
+          <p>
+            Pour ce projet, le but était de réaliser une application react pour
+            agence immobilière. Le site devait être compatible mobile et
+            recuperait les données depuis une API.
+          </p>
         </ProjectThumbnail>
         <ProjectThumbnail
           title="Maquettage"
@@ -64,7 +117,15 @@ export default function Portfolio() {
             'project/openclassrooms/projet10-maquettage/4.png',
           ]}
         >
-          <p>Test</p>
+          <h1>Projet Maquettage</h1>
+          <a target="_blank" href="https://github.com/sarkande/Projet_13">
+            Lien github: Projet_12
+          </a>
+          <p>
+            Pour ce projet, le but était de réaliser une application react
+            permettant d'afficher un panel de statistiques détaillés pour un
+            utilisateur en fonction de ses performances physiques.
+          </p>
         </ProjectThumbnail>
         <ProjectThumbnail
           title="Billed"
@@ -141,7 +202,7 @@ export default function Portfolio() {
       <div className={styles.portfolio}>
         <ProjectThumbnail
           title="Foundry VTT Naheulbeuk"
-          thumbnail="project/naheulbeuk.jpg"
+          thumbnail="project/naheulbeuk/1.png"
           carousel={[
             'project/naheulbeuk/1.png',
             'project/naheulbeuk/2.png',
@@ -159,7 +220,7 @@ export default function Portfolio() {
         </ProjectThumbnail>
         <ProjectThumbnail
           title="Talents-Affinity"
-          thumbnail="project/talents-affinity.jpg"
+          thumbnail="project/talents-affinity/3.png"
           carousel={[
             'project/talents-affinity/1.png',
             'project/talents-affinity/2.png',
@@ -173,13 +234,13 @@ export default function Portfolio() {
         </ProjectThumbnail>
         <ProjectThumbnail
           title="Site AngularJS/RubyOnRails Goldrush"
-          thumbnail="project/goldrush_grand.png"
+          thumbnail="project/goldrush.png"
         >
           <p>Test</p>
         </ProjectThumbnail>
         <ProjectThumbnail
           title="OrcWar"
-          thumbnail="project/orcwar.png"
+          thumbnail="project/orcwar/2.png"
           carousel={[
             'project/orcwar/1.png',
             'project/orcwar/2.png',
@@ -190,7 +251,7 @@ export default function Portfolio() {
         </ProjectThumbnail>
         <ProjectThumbnail
           title="Jonquille Sportive Reignier"
-          thumbnail="project/jonquille.jpg"
+          thumbnail="project/jonquille/1.png"
           carousel={['project/jonquille/1.png', 'project/jonquille/2.png']}
         >
           <p>Test</p>
@@ -240,7 +301,8 @@ export default function Portfolio() {
         </ProjectThumbnail>
         <ProjectThumbnail
           title="Navigateur web simplifié"
-          thumbnail="project/mini/1.png"
+          thumbnail="project/mini/2.png"
+          carousel={['project/mini/1.png', 'project/mini/2.png']}
         >
           <p>Test</p>
         </ProjectThumbnail>
