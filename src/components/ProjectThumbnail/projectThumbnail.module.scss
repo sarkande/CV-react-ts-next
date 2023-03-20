@@ -12,6 +12,23 @@
   }
   .container {
     border: red;
+    .children {
+      max-width: 80%;
+      margin: 10px;
+      h1 {
+        font-size: x-large;
+        margin-bottom: 10px;
+      }
+      a {
+        margin: 10px;
+        padding-top: 20px;
+      }
+      p {
+        margin: 10px;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
   }
   &.maximized {
     width: 100%;

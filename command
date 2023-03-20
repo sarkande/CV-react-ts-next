@@ -1,0 +1,1 @@
+sudo pm2 start "npm start" --name cv-react-next-app

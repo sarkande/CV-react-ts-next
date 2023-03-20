@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Image from 'next/image'
 import styles from './projectThumbnail.module.scss'
 import ImageWithFallback from '../ImageWithFallback'
 import Carousel from '../Carousel'
@@ -18,7 +17,7 @@ export default function ProjectThumbnail({
   carousel,
 }: React.PropsWithChildren<MyProps>) {
   const [open, setOpen] = useState(false)
-  const [src, setSrc] = useState(thumbnail !== undefined ? thumbnail : '')
+  const [src] = useState(thumbnail !== undefined ? thumbnail : '')
   const handleOpen = () => {
     console.log('click')
     setOpen(!open)
@@ -27,7 +26,7 @@ export default function ProjectThumbnail({
     <div className={`${styles.thumbnail} ${open ? styles.maximized : null}`}>
       {open ? (
         <div className={styles.container}>
-          <div>{children}</div>
+          <div className={styles.children}>{children}</div>
           {carousel ? <Carousel img={carousel} /> : null}
         </div>
       ) : null}

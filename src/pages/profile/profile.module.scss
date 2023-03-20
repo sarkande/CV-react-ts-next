@@ -1,0 +1,51 @@
+.section {
+  background-color: white;
+  max-width: 70%;
+  margin: auto;
+
+  h1 {
+    font-size: xx-large;
+    margin: 25px;
+    margin-left: 0px;
+  }
+  h2 {
+    font-size: x-large;
+    margin: 20px;
+    margin-left: 5px;
+  }
+  h3 {
+    font-size: large;
+    margin: 15px;
+  }
+  p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    margin: 10px;
+    padding: 10px;
+    &.green {
+      background-color: green;
+    }
+  }
+  li {
+    margin: 10px 0px 10px 70px;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.58;
+    list-style-type: circle;
+  }
+}
+
+.summary {
+  position: fixed;
+  width: 15%;
+  left: 15px;
+  top: 25%;
+  li {
+    list-style-type: circle;
+    margin: 5px;
+    a {
+      color: #0074d9;
+    }
+  }
+}
