@@ -71,3 +71,22 @@
     }
   }
 }
+
+.tag {
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+  position: relative;
+  bottom: 5px;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  &.red {
+    background-color: #ff4136;
+  }
+  &.blue {
+    background-color: #0074d9;
+  }
+  &.green {
+    background-color: #2ecc40;
+  }
+}

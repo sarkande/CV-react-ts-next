@@ -5,6 +5,8 @@ export type GlobalContent = {
 }
 export const OpenThumbnailContext = createContext<GlobalContent>({
   openThumbnail: '', // set a default value
-  setOpenThumbnail: () => {},
+  setOpenThumbnail: () => {
+    return
+  },
 })
 export const useGlobalContext = () => useContext(OpenThumbnailContext)

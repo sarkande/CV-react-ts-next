@@ -2,16 +2,14 @@ import { useEffect, useState } from 'react'
 import styles from './projectThumbnail.module.scss'
 import ImageWithFallback from '../ImageWithFallback'
 import Carousel from '../Carousel'
-import {
-  OpenThumbnailContext,
-  useGlobalContext,
-} from '@/context/OpenThumbnailContext'
+import { useGlobalContext } from '@/context/OpenThumbnailContext'
 
 interface MyProps {
   children?: React.ReactNode
   thumbnail?: string
   title: string
   carousel?: string[]
+  tags?: string[]
 }
 
 export default function ProjectThumbnail({
@@ -19,6 +17,7 @@ export default function ProjectThumbnail({
   thumbnail,
   title,
   carousel,
+  tags,
 }: React.PropsWithChildren<MyProps>) {
   const { openThumbnail, setOpenThumbnail } = useGlobalContext()
 
@@ -32,7 +31,7 @@ export default function ProjectThumbnail({
 
   useEffect(() => {
     setOpen(openThumbnail === title)
-  })
+  }, [openThumbnail, title])
   return (
     <div className={`${styles.thumbnail} ${open ? styles.maximized : null}`}>
       {open ? (
@@ -42,17 +41,30 @@ export default function ProjectThumbnail({
         </div>
       ) : null}
       {!open ? (
-        <ImageWithFallback
-          className={styles.thumbnail_picture}
-          key={src}
-          alt=""
-          width={200}
-          height={150}
-          src={`/${src} `}
-          fallbackSrc="/project/image_not_available.png"
-        />
+        <>
+          <ImageWithFallback
+            className={styles.thumbnail_picture}
+            priority
+            key={src}
+            alt=""
+            width={200}
+            height={150}
+            src={`/${src} `}
+            fallbackSrc="/project/image_not_available.png"
+          />
+        </>
       ) : null}
       <div className={styles.thumbnail_title}>
+        {tags?.map((tag, i) => (
+          <span
+            key={tag + Math.random() * 100000}
+            className={`${styles.tag} ${
+              i === 0 ? styles.red : i === 1 ? styles.blue : styles.green
+            }`}
+          >
+            {tag}
+          </span>
+        ))}
         <h1>{title}</h1>
         <button onClick={handleOpen}>
           {!open ? 'Ouvrir détails' : 'Fermer détails'}
