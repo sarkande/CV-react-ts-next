@@ -55,16 +55,18 @@ export default function ProjectThumbnail({
         </>
       ) : null}
       <div className={styles.thumbnail_title}>
-        {tags?.map((tag, i) => (
-          <span
-            key={tag + Math.random() * 100000}
-            className={`${styles.tag} ${
-              i === 0 ? styles.red : i === 1 ? styles.blue : styles.green
-            }`}
-          >
-            {tag}
-          </span>
-        ))}
+        <div className={styles.tags}>
+          {tags?.map((tag, i) => (
+            <span
+              key={tag + Math.random() * 100000}
+              className={`${styles.tag} ${
+                i === 0 ? styles.red : i === 1 ? styles.blue : styles.green
+              }`}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
         <h1>{title}</h1>
         <button onClick={handleOpen}>
           {!open ? 'Ouvrir détails' : 'Fermer détails'}

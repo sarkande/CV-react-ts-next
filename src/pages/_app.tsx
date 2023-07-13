@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const route: { path: string; value: string }[] = [
     { path: '/', value: 'Accueil' },
     { path: '/cv', value: 'CV' },
-    { path: '/profile', value: 'Parcours' },
+    // { path: '/profile', value: 'Parcours' },
     { path: '/portfolio', value: 'Portfolio' },
   ]
   return (

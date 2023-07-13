@@ -24,10 +24,10 @@ export default function Home() {
             Dans la partie CV, vous pourrez visualiser directement mon CV
             complet ou télécharger une version PDF plus condensé.
           </li>
-          <li>
+          {/* <li>
             Dans la partie Parcours, vous pourrez lire un résumé complet de mon
             parcours informatique.
-          </li>
+          </li> */}
           <li>
             Dans la partie Portfolio, une liste non-exhaustive de l'ensemble de
             mes projets. Vous y trouverez donc des screenshots et en fonction de

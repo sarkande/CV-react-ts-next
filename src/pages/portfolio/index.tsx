@@ -19,6 +19,83 @@ export default function Portfolio() {
         <Head>
           <title>Allan Perez - Portfolio</title>
         </Head>
+        <h1 className={styles.title}>Projets récents</h1>
+        <div className={styles.portfolio}>
+          <ProjectThumbnail
+            title="Bujinkan-Neko"
+            thumbnail="project/bujinkan-neko/1.jpg"
+            carousel={['project/bujinkan-neko/1.jpg']}
+            tags={['ReactJS', 'TypeScript', 'Laravel']}
+          >
+            {' '}
+            <h1>Projet Bujinkan-Neko</h1>
+            <a target="_blank" href="https://bujinkan-neko.fr/">
+              Lien site: Bujinkan-Neko
+            </a>
+            <p>
+              Il s'agit d'une commande de site web pour le club d'art martial de
+              Saint Raphael (Frejus)
+            </p>
+            <p>
+              Le front end est realisé en ReactJs Vanilla et le back avec
+              Laravel
+            </p>
+          </ProjectThumbnail>
+
+          <ProjectThumbnail
+            title="BetterOrganizer"
+            thumbnail="project/betterOrganizer/1.png"
+            carousel={[
+              'project/betterOrganizer/1.png',
+              'project/betterOrganizer/3.png',
+              'project/betterOrganizer/2.png',
+            ]}
+            tags={['ReactJS', 'Electron', 'NodeJS', 'C#', 'REDUX']}
+          >
+            {' '}
+            <h1>Projet Better Organizer</h1>
+            <p>
+              Il s'agit d'un projet visant à refaire completement le logiciel de
+              Naio, organizer, afin d'avoir une solution plus interessante en
+              terme de fonctionnalité, et facilement manipulable.
+            </p>
+            <p>
+              Le projet est découpé en 2 parties, une partie back-end utilisant
+              du c#, et une front utilisant NodeJS, ReactJS et Electron.
+            </p>
+            <p>
+              La partie back réalisé en C# va permettre de lister les processus
+              relatifs à Dofus de lancer, et en fonction d'un argument donné
+              lors de l'execution du programme, va pouvoir effectuer differentes
+              tâches
+            </p>
+            <ul>
+              <li>Recuperer la liste des processus</li>
+              <li>
+                Basculer vers la fenetre selectionné en fonction d'un pid donné
+              </li>
+            </ul>
+            <p>
+              La partie front est tout d'abord composé d'une partie NodeJS qui
+              va permettre de:
+            </p>
+            <ul>
+              <li>
+                Executer le programme Back pour pouvoir recuperer les données ou
+                changer les fenetres
+              </li>
+              <li>Creer la fenetre Electron</li>
+              <li>
+                Permettre la communication entre le front ReactJS et le back
+              </li>
+              <li>Sauvegarder les preferences utilisateur</li>
+            </ul>
+            <p>
+              Le front est également composé d'une partie Electron et de React
+              pour pouvoir afficher correctement les données traites
+            </p>
+          </ProjectThumbnail>
+        </div>
         <h1 className={styles.title}>Formation ReactJS</h1>
         <div className={styles.portfolio}>
           <ProjectThumbnail
@@ -306,7 +383,7 @@ export default function Portfolio() {
             <p></p>
           </ProjectThumbnail>
         </div>
-        <h1 className={styles.title}>Projets</h1>
+        <h1 className={styles.title}>Ancien projets</h1>
         <div className={styles.portfolio}>
           <ProjectThumbnail
             title="Foundry VTT Naheulbeuk"
