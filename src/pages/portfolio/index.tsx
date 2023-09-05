@@ -25,7 +25,7 @@ export default function Portfolio() {
             title="Bujinkan-Neko"
             thumbnail="project/bujinkan-neko/1.jpg"
             carousel={['project/bujinkan-neko/1.jpg']}
-            tags={['ReactJS', 'TypeScript', 'Laravel']}
+            tags={['ReactJS', 'TypeScript', 'REST Php']}
           >
             {' '}
             <h1>Projet Bujinkan-Neko</h1>
@@ -37,8 +37,46 @@ export default function Portfolio() {
               Saint Raphael (Frejus)
             </p>
             <p>
-              Le front end est realisé en ReactJs Vanilla et le back avec
-              Laravel
+              Le front end est realisé en ReactJs Vanilla et le back est une api
+              REST codé en php
+            </p>
+          </ProjectThumbnail>
+
+          <ProjectThumbnail
+            title="Capture trame"
+            thumbnail="project/captureTrame/1.png"
+            carousel={[
+              'project/captureTrame/1.png',
+              'project/captureTrame/2.png',
+              'project/captureTrame/3.png',
+              'project/captureTrame/4.png',
+            ]}
+            tags={[
+              'C#',
+              'ReactJS',
+              'Electron',
+              'Test unitaire',
+              'Retro Engineering',
+            ]}
+          >
+            <h1>Projet Capture trame</h1>
+
+            <p>
+              Il s'agit d'un projet permettant après décompilation du code
+              source du jeu Dofus, de lire les trames réseaux échangés entre le
+              client et le serveur afin de pouvoir analyser et exploiter des
+              données dans un but de création d'outil ergonomique permettant de
+              rendre le jeu plus agréable.
+            </p>
+            <p>
+              Les données sont analysés en c# puis un back end et créé pour
+              pouvoir envoyer les informations à une application Electron
+              ReactJS pour permettre d'exploiter les données
+            </p>
+            <p>
+              Une série de tests unitaire ont été réalisé en c# pour pouvoir
+              assurer un fonctionnement correct des fonctions de traitements de
+              bytes
             </p>
           </ProjectThumbnail>
 
