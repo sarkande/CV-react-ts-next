@@ -413,7 +413,7 @@ export default function Portfolio() {
             tags={['HTML', 'CSS']}
           >
             <h1>Booki</h1>
-            <a href=""></a>
+            <a href="https://github.com/sarkande/projet_02-booki">Lien github: Projet 02</a>
             <p>
               Ce projet basique servait d'introduction à cette formation, et
               consistait à un site statique de location immobiliere
